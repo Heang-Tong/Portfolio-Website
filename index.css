@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    background-color: #020011;
+    background-color: #111;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -93,7 +93,7 @@ body {
 
 .project-imgs {
     width: 45%;
-    height: 600px;
+    max-height: 600px;
 }
 .project-imgs-row {
     width: 45%;
@@ -133,7 +133,7 @@ body {
     align-items: center;
     height: 500px;
     background-color: white;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 .links {
@@ -152,9 +152,57 @@ body {
 }
 
 .links h1 {
-    font-size: 30px;
+    font-size: 3vw;
 }
 .links a {
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .header a {
+        font-size: 6vw;
+    }
+    .header div a {
+        font-size: 3vw;
+    }
+
+    .banner h1 {
+        font-size: 6vw;
+    }
+    .banner p {
+        font-size: 4vw;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+    .project-imgs {
+        width: 100%;
+    }
+    .project-desc {
+        width: calc(100% - 20px);
+    }
+    .project-desc a {
+        font-size: 16px;
+    }
+    .project-imgs-row {
+        width: 100%;
+    }
+    .project-imgs-row img {
+        width: 50%;
+    }
+    
+    .contacts {
+        font-size: 4.5vw;
+    }
+    .links {
+        flex-direction: column;
+    }
+    .links h1 {
+        font-size: 5.5vw;
+    }
+    .links a {
+        font-size: 3vw;
+    }
 }
